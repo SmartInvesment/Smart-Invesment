@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .home-button {
+      background-color: #2196F3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .home-button:hover {
+      background-color: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <h1>SIP Calculator</h1>
+
+    <label for="investmentAmount">Investment Amount (₹):</label>
+    <input type="number" id="investmentAmount" placeholder="Enter amount" required>
+
+    <label for="interestRate">Annual Interest Rate (%):</label>
+    <input type="number" id="interestRate" placeholder="Enter interest rate" required>
+
+    <label for="investmentDuration">Investment Duration (years):</label>
+    <input type="number" id="investmentDuration" placeholder="Enter duration" required>
+
+    <button onclick="calculateSIP()">Calculate SIP</button>
+
+    <div id="result"></div>
+
+    <button class="home-button" onclick="goHome()">Go Back </button>
+  </div>
+
+  <script>
+    function calculateSIP() {
+      var investmentAmount = parseFloat(document.getElementById('investmentAmount').value);
+      var interestRate = parseFloat(document.getElementById('interestRate').value);
+      var investmentDuration = parseInt(document.getElementById('investmentDuration').value);
+
+      var monthlyInterestRate = (interestRate / 100) / 12;
+      var totalMonths = investmentDuration * 12;
+
+      var futureValue = investmentAmount * ((Math.pow(1 + monthlyInterestRate, totalMonths) - 1) / monthlyInterestRate) * (1 + monthlyInterestRate);
+
+      var resultElement = document.getElementById('result');
+      resultElement.innerHTML = 'Future Value after ' + investmentDuration + ' years: ₹' + futureValue.toFixed(2);
+    }
+
+    function goHome() {
+      window.location.href = "sip_info.html"; // Replace with the actual home page URL
+    }
+  </script>
+
+</body>
+</html>

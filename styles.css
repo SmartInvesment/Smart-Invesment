@@ -1,0 +1,404 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background: linear-gradient(to right, #f5f3f3, #f3f1f1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #020202;
+    text-decoration:none;
+    padding: 15px 20px;
+    transition: background-color 1ms;
+    
+}
+
+nav ul li a:hover {
+    background-color: #c5a3a3;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+.registration-section,
+.login-section,
+.feedback-section,
+.books-section {
+    margin-bottom: 20px;
+}
+
+.registration-section h2,
+.login-section h2,
+.feedback-section h2,
+.books-section h2 {
+    color: #333;
+    text-align: center;
+}
+
+.registration-section form,
+.login-section form,
+.feedback-section form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.registration-section label,
+.login-section label,
+.feedback-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.registration-section input,
+.login-section input,
+.feedback-section input,
+.registration-section textarea,
+.feedback-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-section button,
+.login-section button,
+.feedback-section button {
+    background: linear-gradient(to right, #3498db, #6ab0de);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.registration-section button:hover,
+.login-section button:hover,
+.feedback-section button:hover {
+    background: linear-gradient(to right, #2577ae, #4d9fc2);
+}
+
+.login-section p,
+.feedback-section p {
+    margin-top: 10px;
+    color: #555;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    text-align: center;
+    margin: 20px;
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+}
+.faq {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    color: #333;
+}
+img {
+    width:  600px;
+    height: 250px;
+    object-fit: cover;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+}
+/* Your existing CSS code */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-us {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.about-us h2, .about-us h3 {
+    color: #fff;
+}
+
+.about-us p {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+}
+.social-media h3 {
+    color: #fff;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Investment Options Section Styles */
+.investment-options {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.investment-options h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.investment-options p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 300px;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.option img {
+    width: 100%;
+    height: 200px; /* Ensure images maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.option h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Benefits Section Styles */
+.benefits {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    float: center;
+}
+
+.benefits h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.benefit {
+    flex: 1;
+    margin: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+}
+
+.benefit img {
+    width: 100%;
+    height: 200;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 18px;
+    line-height: 1.5;
+}
